@@ -9,7 +9,6 @@ gcc
 
 ### Installation
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
 1. Clone the repo
    ```sh
@@ -37,7 +36,6 @@ gcc scanCgi.c -o scanCgi
 ./exploitCgi
 ```
  
-
 ## How it works
 
 Each binary will output it's correspondint .txt to STDOUT, i.e. exploitCgi will print exploitCgi.txt and so on
