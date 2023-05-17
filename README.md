@@ -11,15 +11,32 @@ gcc
 
 _Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
 
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone 
    ```
-3. run make.sh
+2. run make.sh
    ```sh
    chmod +x make.sh
+   ./make.sh
    ```
-<!-- USAGE EXAMPLES -->
+ ### OR 
+
+Just compile each file individually
+```sh
+gcc exploitCgi.c -o exploitCgi
+./exploitCgi
+```
+ ```sh
+gcc editScript.c -o editScript
+./exploitCgi
+```
+
+```sh
+gcc scanCgi.c -o scanCgi
+./exploitCgi
+```
+ 
 
 ## How it works
 
@@ -38,9 +55,26 @@ Note that exploitCgi reacts to DELIMITER char and DELAY char, see exploitCgi.txt
 so when you press Enter it will output all chars before the Delimiter char which is defined as 0x12
 and when it finds 0x11 it will delay for some random time, so it kinda mimics internet connection
 
+<!-- USAGE EXAMPLES -->
+## Usage
+
+After compiling just run any of the binaries and start clicking keyboard
+Try TAB and ENTER for different effects
+ ```sh
+  ./exploitCgi
+  ./scanCgi
+  ./editScript
+   ```
+
+There can be some sense in adding some fake command line arguments i.e.
+```sh
+./scanCgi interreklama.ru 
+./editScript scanCgi.c
+```
+if it will be filmed somehow
 
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
