@@ -13,7 +13,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 1. Clone the repo
    ```sh
-   git clone 
+   git clone https://github.com/dmitrygerasimuk/hackertypeBliznuk
    ```
 2. run make.sh
    ```sh
